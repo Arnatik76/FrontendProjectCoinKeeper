@@ -46,7 +46,7 @@ The project consists of two main parts:
 
 ### Backend:
 *   **Node.js**
-* **Express.js **: Web framework
+* **Express.js**: Web framework
 * **JSON Files**: As a simple data store (`fs` module)
 * **jsonwebtoken**: For JWT-based authentication
 * **cors**: For processing CORS requests
@@ -76,12 +76,12 @@ The project consists of two main parts:
     * `public/`: Static assets.
     * `src/`: The source code of the React application.
         * `components/`: Reusable UI components (for accounts, categories, transactions, layout, etc.).
-* `pages/`: Page components (Dashboard, Login, Stats, Settings, etc.).
+        * `pages/`: Page components (Dashboard, Login, Stats, Settings, etc.).
         * `redux/`: Redux logic (store, slices for auth, transactions, categories, etc.).
-* `services/`: API client (api.js ).
-* `App.jsx': The root component of the routing application.
-        * 'main.jsx': The entry point of the React application.
-    * `index.html `: The main HTML file.
+        * `services/`: API client (api.js ).
+        * `App.jsx`: The root component of the routing application.
+        * `main.jsx`: The entry point of the React application.
+        * `index.html `: The main HTML file.
     *   `package.json`: Dependencies and scripts for frontend.
     *   `vite.config.js`, `tailwind.config.js`, `eslint.config.js`: Configuration files.
 
@@ -106,29 +106,29 @@ The project consists of two main parts:
 All endpoints start with `/api`. Authentication (Bearer Token) is required, except for `/users/register` and `/users/login'.
 
 * **Users:**
-* `POST /users/register`
-    *   `POST /users/login`
-    *   `GET /users/me`
-    *   `PUT /users/me`
-    *   `DELETE /users/me`
+   * `POST /users/register`
+   *   `POST /users/login`
+   *   `GET /users/me`
+   *   `PUT /users/me`
+   *   `DELETE /users/me`
 * **Accounts:**
-* `GET /accounts`
-    *   `POST /accounts`
-    *   `GET /accounts/:id`
-    *   `PUT /accounts/:id`
-    *   `DELETE /accounts/:id`
+   * `GET /accounts`
+   *   `POST /accounts`
+   *   `GET /accounts/:id`
+   *   `PUT /accounts/:id`
+   *   `DELETE /accounts/:id`
 * **Categories:**
-* `GET /categories' (returns user categories)
-* `GET /categories/summary` (categories with calculated balances)
-    *   `POST /categories`
-    *   `GET /categories/:id`
-    *   `PUT /categories/:id`
-    *   `DELETE /categories/:id`
+   * `GET /categories` (returns user categories)
+   * `GET /categories/summary` (categories with calculated balances)
+   *   `POST /categories`
+   *   `GET /categories/:id`
+   *   `PUT /categories/:id`
+   *   `DELETE /categories/:id`
 * **Transactions:**
-* `GET /transactions' (with the possibility of filtering and pagination)
-    *   `POST /transactions`
-    *   `GET /transactions/:id`
-    *   `PUT /transactions/:id`
-    *   `DELETE /transactions/:id`
+   * `GET /transactions` (with the possibility of filtering and pagination)
+   *   `POST /transactions`
+   *   `GET /transactions/:id`
+   *   `PUT /transactions/:id`
+   *   `DELETE /transactions/:id`
 * **Balance:**
-* `GET /balance' (total user balance)
+   * `GET /balance` (total user balance)
